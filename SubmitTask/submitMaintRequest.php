@@ -54,6 +54,14 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
                             </select>
                         </td>
                     </tr>
+					<! --> The following code is for the picture upload it nuges the styles a little bit putting larger spaces between the fields. -->
+					<tr>    
+                        <td width="40">Picture:</td>
+                        <td width="160">
+                            <asp:FileUpload ID="ImageUpload" runat="server" TabIndex="7" />
+                        <br />
+                        </td>
+                    </tr>
                 </table>
                 <br />
                 Description:
