@@ -1,6 +1,6 @@
 <?php
 session_start();
-//comment here
+//Run included PHP scripts to setup the sql database
 require_once "config.php";
 require_once "mysql.php";
 $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_pass'], $GLOBALS['mysql_db']);
@@ -8,14 +8,18 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
-        <title>Employee Goals - Heritage Schools, Inc.</title>
+	<!Title>
+        <title>Maintenance Request Form - Heritage Schools, Inc.</title>
+
+	<!style sheet>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<!javascripts>
         <script type="text/javascript" src="jquery.js"></script>
-
-
         <script type="text/javascript" src="replaceSpecialChars.js"></script>
 
     </head>
-    <body style="background-image: url('templates/joomlage0027-pretender-freedownload/images/wrapperbackground.png');">
+    <body>
         <div id="displayArea">
             <form name="requestSubmitForm" id="requestSubmitForm" method="post" action="submitMaintRequest.php">
                 <b>Please fill in the following information:</b>
@@ -54,7 +58,7 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
                             </select>
                         </td>
                     </tr>
-					<! --> The following code is for the picture upload it nuges the styles a little bit putting larger spaces between the fields. -->
+					<! --The following code is for the picture upload it nuges the styles a little bit putting larger spaces between the fields. -->
 					<tr>    
                         <td width="40">Picture:</td>
                         <td width="160">
