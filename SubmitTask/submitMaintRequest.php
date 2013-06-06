@@ -62,7 +62,7 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
 					<tr>    
                         <td width="40">Picture:</td>
                         <td width="160">
-                            <asp:FileUpload ID="ImageUpload" runat="server" TabIndex="7" />
+                            <input type ="file" name="photoupload" size="20" tabindex="7" />
                         <br />
                         </td>
                     </tr>
