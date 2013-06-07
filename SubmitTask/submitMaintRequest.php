@@ -21,11 +21,11 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
     </head>
     <body>
         <div id="displayArea">
-            <form name="requestSubmitForm" id="requestSubmitForm" method="post" action="submitMaintRequest.php">
+            <form action="sendsub.php" name="requestSubmitForm" id="requestSubmitForm" method="post" >
                 <b>Please fill in the following information:</b>
                 <br />
                 <br />
-                <table>
+                <table>6/Jun/2013 23:02
                     <tr>
                         <td width="40">Name:</td>
                         <td width="160"><input type="text" name="name" id="name" tabindex="1"/></td>
@@ -48,7 +48,7 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
                         <td width="40">Issue:</td>
                         <td width="160"><input type="text" name="issue" id="issue" tabindex="5" maxlength="45"/><br /></td>
                         <td width="40">Location:</td>
-                        <td width="160"><input type="text" name="issue" id="location" tabindex="4" maxlength="45"/><br /></td>
+                        <td width="160"><input type="text" name="location" id="location" tabindex="4" maxlength="45"/><br /></td>
                         <td>Priority</td>
                         <td>
                             <select name="priority" id="priority" tabindex="6">
@@ -62,7 +62,7 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
 					<tr>    
                         <td width="40">Picture:</td>
                         <td width="160">
-                            <input type ="file" name="photoupload" size="20" tabindex="7" />
+                            <input type ="file" name="photoupload" id="photoupload" size="20" tabindex="7" />
                         <br />
                         </td>
                     </tr>
@@ -73,7 +73,7 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
                 <textarea name="description" id="description" cols="60" rows="7" tabindex="7"></textarea>
                 <br />
                 <br />
-                <input type="button" name="submit" id="submit" value="Submit" style="width: 75px" tabindex="8"/>
+                <input type="submit" name="submit" id="submit" value="Submit" style="width: 75px" tabindex="8"/>
             </form>
         </div>
     </body>
