@@ -27,10 +27,12 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
                 <b>Please fill in the following information:</b>
                 <br />
                 <br />
-                <table>6/Jun/2013 23:02
+                <table>
                     <tr>
-                        <td width="40">Name:</td>
-                        <td width="160"><input type="text" name="name" id="name" tabindex="1"/></td>
+                        <td width="80">First Name:</td>
+                        <td width="160"><input type="text" name="fname" id="fname" tabindex="1"/></td>
+                        <td width="40">Last Name:</td>
+                        <td width="160"><input type="text" name="lname" id="lname" tabindex="1"/></td>
                         <td>Phone Ext:</td>
                         <td><input type="text" name="extension" id="extension" size="3" maxlength="3" tabindex="2"/></td>
                     </tr>
@@ -48,9 +50,9 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
                 <table>
                     <tr>
                         <td width="40">Issue:</td>
-                        <td width="160"><input type="text" name="issue" id="issue" tabindex="5" maxlength="45"/><br /></td>
+                        <td width="160"><input type="text" name="issue" id="issue" tabindex="4" maxlength="45"/><br /></td>
                         <td width="40">Location:</td>
-                        <td width="160"><input type="text" name="location" id="location" tabindex="4" maxlength="45"/><br /></td>
+                        <td width="160"><input type="text" name="location" id="location" tabindex="5" maxlength="45"/><br /></td>
                         <td>Priority</td>
                         <td>
                             <select name="priority" id="priority" tabindex="6">
