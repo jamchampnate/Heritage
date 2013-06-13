@@ -27,19 +27,20 @@ $db = new MySQL($GLOBALS['mysql_host'], $GLOBALS['mysql_user'], $GLOBALS['mysql_
 
 
 
-Thank you <?php echo $_POST["name"]; ?>!<br>
+Thank you <?php echo $_POST["fname"]; echo " "; echo $_POST["lname"]; ?>!<br>
 You are at ext <?php echo $_POST["extension"]; ?>.
 Your email is <?php echo $_POST["email"]; ?><br>
 You are having a problem with <?php echo $_POST["issue"]; ?><br>
 You are in <?php echo $_POST["location"]; ?><br>
-It is a <?php echo $_POST["priority"]; ?><br>
+It is a <?php echo $_POST["priority"]; ?> priority<br>
 and you described it as:<br><?php echo $_POST["description"]; ?><br>
 
 
 
 <?php
 require_once "config.php";
-$name = $_POST["name"]; 
+$fname = $_POST["fname"]; 
+$lname = $_POST["lname"];
 $ext = $_POST["extension"];
 $email = $_POST["email"];
 $issue = $_POST["issue"];
@@ -66,6 +67,8 @@ if (!mysqli_query($con,$sql))
 echo "1 record added";
 
 mysqli_close($con);
+
+
 ?>
 <br>
 Thank you for your submission have a nice day!
